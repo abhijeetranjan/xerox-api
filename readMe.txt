@@ -59,11 +59,13 @@ The issue is assigned to the authenticated user. Requires authentication.
 Returns valid error/success message.
 ---------------------------------------------------------------------------
 
-[NOTE/Optional] : default GitHub and BitBucket repository url can also be provided on config.php file (to be found on api directory).
+[NOTE/Optional] : default GitHub(defined in GITHUB_REPO_URL variable) and BitBucket(defined in BITBUCKET_REPO_URL variable)  repository url can also be provided on config.php file (to be found on api directory).
 And, then the script can also be used as,
 
 php create-ticket.php -u username -p password github/GITHUB -d "Issue Title" "Issue Description"
 
 php create-ticket.php -u username -p password bitbucket/BITBUCKET -d "Issue Title" "Issue Description"
+
+[Default BitBucket/GitHub URL is provided in config.php]
 
 Thanks to GitHub and BitBucket for the high quality API and documentation.
